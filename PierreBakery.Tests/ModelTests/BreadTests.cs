@@ -34,6 +34,15 @@ namespace PierreBakery.TestTools
       double testCost = 5.00;
       Assert.AreEqual(testCost, testBread.Cost);
     }
+    [TestMethod]
+    public void CalculateTotalLoafCost_GetTotalLoafCost_Double()
+    {
+      Bread testBread = new Bread(2);
+      double loafCost = 5.00;
+      double result = testBread.TotalCost();
+      Assert.AreEqual(loafCost, result);
+    }
   }
 }
+
 
