@@ -19,6 +19,14 @@ namespace PierreBakery.TestTools
       Bread testBread = new Bread(testQuantity);
       Assert.AreEqual(testQuantity, testBread.Quantity);
     }
+    [TestMethod]
+    public void SetQuantity_SetQuantity_Int()
+    {
+      int testQuantity = 2;
+      Bread testBread = new Bread(1);
+      testBread.Quantity = 2;
+      Assert.AreEqual(testQuantity, testBread.Quantity);
+    }
   }
 }
 
