@@ -50,6 +50,14 @@ namespace PierreBakery.TestTools {
       double result = testBread.TotalCost();
       Assert.AreEqual(twoLoafCost, result);
     }
+    [TestMethod]
+    public void CalculateCostOfThreeLoaves_GetCostOfThreeLoaves_Double()
+    {
+      Bread testBread = new Bread(3);
+      double threeLoafCost = 10.00;
+      double result = testBread.TotalCost();
+      Assert.AreEqual(threeLoafCost, result);
+    }
   }
 }
 

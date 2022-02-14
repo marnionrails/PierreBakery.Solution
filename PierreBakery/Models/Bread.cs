@@ -20,6 +20,10 @@ namespace PierreBakery.Models
       {
         this.Cost = 10.00;
       }
+      else if (this.Quantity == 3)
+      {
+        this.Cost = 10.00;
+      }
       return this.Cost;
     }
 
