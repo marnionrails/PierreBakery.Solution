@@ -27,6 +27,13 @@ namespace PierreBakery.TestTools
       testBread.Quantity = 2;
       Assert.AreEqual(testQuantity, testBread.Quantity);
     }
+    [TestMethod]
+    public void GetCost_GetCost_Double()
+    {
+      Bread testBread = new Bread(2);
+      double testCost = 5.00;
+      Assert.AreEqual(testCost, testBread.Cost);
+    }
   }
 }
 
