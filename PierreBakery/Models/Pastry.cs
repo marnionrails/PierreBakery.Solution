@@ -9,5 +9,14 @@ namespace PierreBakery.Models
     {
       Quantity = quantity;
     }
+
+    public double TotalCost()
+    {
+      if (this.Quantity == 1)
+      {
+        this.Cost = 2.00;
+      }
+      return this.Cost;
+    }
   }
 }
