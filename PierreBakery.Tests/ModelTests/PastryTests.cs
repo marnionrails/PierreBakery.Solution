@@ -27,7 +27,13 @@ namespace PierreBakery.TestTools
       Pastry testPastry = new Pastry(3);
       int result = testPastry.Quantity = 2;
       Assert.AreEqual(pastryAmount, result);
-
+    }
+    [TestMethod]
+    public void GetCost_GetCost_Double()
+    {
+      Pastry testPastry = new Pastry(1);
+      double testCost = 0.00;
+      Assert.AreEqual(testCost, testPastry.Cost);
     }
   }
 }
