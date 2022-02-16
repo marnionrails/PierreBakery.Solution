@@ -51,5 +51,13 @@ namespace PierreBakery.TestTools
       double result = testPastry.TotalCost();
       Assert.AreEqual(pastryCost, result);
     }
+    [TestMethod]
+    public void CalculatePastryCostWithFreeThird_GetCostWithFreeThird_Double()
+    {
+      Pastry testPastry = new Pastry(6);
+      double pastryCost = 10.00;
+      double result = testPastry.TotalCost();
+      Assert.AreEqual(pastryCost, result);
+    }
   }
 }
