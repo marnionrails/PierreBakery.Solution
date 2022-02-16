@@ -12,11 +12,8 @@ namespace PierreBakery.Models
 
     public double TotalCost()
     {
-      if (this.Quantity == 1)
-      {
-        this.Cost = 2.00;
-      }
-      return this.Cost;
+      double listCost = this.Quantity * 2.00;
+      return listCost;
     }
   }
 }
