@@ -1,3 +1,4 @@
+using System;
 namespace PierreBakery.Models
 {
   public class Pastry
@@ -9,7 +10,18 @@ namespace PierreBakery.Models
     {
       Quantity = quantity;
     }
-
+      public string CheckForValidInput()
+    {
+      if (this.Quantity >= 0)
+      {
+        return "Order coming up!";
+      }
+      else
+      {
+        return "Input must be an integer greater than or equal to 0";
+      }
+    }
+    
     public double TotalCost()
     {
       double singlePastries = this.Quantity % 3;
