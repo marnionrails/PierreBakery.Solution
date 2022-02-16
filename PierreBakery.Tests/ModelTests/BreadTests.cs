@@ -74,6 +74,13 @@ namespace PierreBakery.TestTools {
       double result = testBread.TotalCost();
       Assert.AreEqual(sixLoafCost, result);
     }
+    [TestMethod]
+    public void HandleNegativeInput_GetStringForNegativeInput_String()
+    {
+      Bread testBread = new Bread(-6);
+      string errorHandler = "Input must be an integer greater than or equal to 0";
+      Assert.AreEqual(errorHandler, testBread.CheckForValidInput());
+    }
   }
 }
 
